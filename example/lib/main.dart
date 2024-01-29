@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:chat_bubbles/chat_bubbles.dart';
 import 'package:audioplayers/audioplayers.dart';
 import "package:cached_network_image/cached_network_image.dart";
+import 'package:chat_bubbles/chat_bubbles.dart';
+import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
@@ -63,6 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   onSeekChanged: _changeSeek,
                   onPlayPauseButtonClick: _playAudio,
                   sent: true,
+                  isSender: false,
                 ),
                 BubbleNormal(
                   text: 'bubble normal with tail',
